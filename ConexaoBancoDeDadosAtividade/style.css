@@ -96,7 +96,7 @@ border-radius: 5px;
 border: none;
 }
 
-td.grupo_botao_acao{
+.grupo_botao_acao{
     display: flex;
     flex-direction: row;
     text-align: center;

@@ -63,8 +63,9 @@
         <td><?php echo $row['cep']; ?></td>
         <td><?php echo $row['cidade']; ?></td>
         <td><?php echo $row['estado']; ?></td>
-        <td class="grupo_botao_acao">
-        <form action="edicao.php" method="GET">
+        <td>
+            <div class="grupo_botao_acao">
+                 <form action="edicao.php" method="GET">
     <input type="hidden" name="registro" value="<?php echo $row['id']; ?>">
     <button class="editar_botao" type="submit">Editar</button>
 </form>
@@ -72,6 +73,8 @@
     <input type="hidden" name="registro" value="<?php echo $row['id']; ?>">
     <button class="deletar_botao" type="submit"> Deletar</button>
 </form>
+            </div>
+       
             
             
         </td>

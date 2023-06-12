@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt->bindParam(':id', $id);
 
     if ($stmt->execute()) {
-        echo 'Registro atualizado com sucesso!';
+       header("Location: consulta.php");
     } else {
         echo 'Erro ao atualizar o registro.';
     }
